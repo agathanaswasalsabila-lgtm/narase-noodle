@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narasé Noodle</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#fff8fb;color:#333;overflow-x:hidden}
+.app{max-width:420px;margin:auto;background:white;border-radius:30px;box-shadow:0 20px 40px rgba(0,0,0,0.15);overflow:hidden;position:relative}
+.app::before{content:"";position:absolute;inset:0;background:linear-gradient(45deg,#a8e6cf,#ffd3b6,#ffaaa5);border-radius:30px;opacity:0.9;z-index:0}
+.content{position:relative;z-index:1;background:rgba(255,255,255,0.9);backdrop-filter:blur(6px)}
+.navbar{position:sticky;top:0;background:white;padding:10px;border-bottom:1px solid #eee;display:flex;justify-content:space-around;z-index:10}
+.navbar a{text-decoration:none;color:#333;font-size:12px}
+section{padding:50px 20px}
+h1,h2{margin-bottom:20px;font-family:'Fredoka',sans-serif}
+p{margin-bottom:10px}
+.slider{position:relative;overflow:hidden;border-radius:20px;height:200px;background:#eee}
+.slides{display:flex;transition:0.5s}
+.slides img{width:100%;flex-shrink:0;object-fit:cover;height:200px}
+.hero{text-align:center}
+.hero img{width:100%;border-radius:20px;margin-bottom:10px}
+.btn{display:inline-block;margin-top:15px;padding:10px 20px;background:#ff6f91;color:white;border-radius:20px;text-decoration:none}
+.card{background:white;padding:15px;border-radius:15px;margin:10px 0;box-shadow:0 5px 10px rgba(0,0,0,0.08)}
+.story{background:linear-gradient(135deg,#ffe4ec,#ffd3b6);padding:20px;border-radius:20px}
+.footer{background:#a8e6cf;text-align:center;padding:30px;border-radius:30px 30px 0 0}
+.fade{opacity:0;transform:translateY(30px);transition:0.8s}
+.fade.show{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<div class="app">
+<div class="content">
+
+<div class="navbar">
+<a href="#hero">Home</a>
+<a href="#tantangan">Tantangan</a>
+<a href="#solusi">Solusi</a>
+<a href="#kontak">Kontak</a>
+</div>
+
+<section id="hero" class="hero fade">
+<img src="logo.jpg" style="min-height:120px;object-fit:contain" onerror="this.src='https://via.placeholder.com/300x120?text=LOGO'">
+<div class="slider">
+<div class="slides" id="slides">
+<img src="banner.jpg" onerror="this.src='https://via.placeholder.com/400x200?text=BANNER'">
+<img src="banner.jpg" onerror="this.src='https://via.placeholder.com/400x200?text=BANNER'">
+<img src="banner.jpg" onerror="this.src='https://via.placeholder.com/400x200?text=BANNER'">
+</div>
+</div>
+
+<h1>🍜 NARASÉ NOODLE</h1>
+<p><b>Sehat • Lokal • Berkelanjutan</b></p>
+<p>Bagaimana jika mie instan tidak lagi identik dengan makanan kurang sehat, tetapi justru menjadi solusi pangan masa depan?</p>
+<p><b>Deskripsi Singkat:</b> Narasé Noodle menghadirkan inovasi mie instan berbasis sukun, diperkaya pewarna alami parijoto, dan dilengkapi abon lele sebagai sumber protein lokal.</p>
+<a class="btn">Jelajahi Inovasi Kami ↓</a>
+</section>
+
+<section id="tantangan" class="fade">
+<h2>⚠️ Tantangan Pangan yang Kita Hadapi</h2>
+<p>Konsumsi mie instan di Indonesia terus meningkat, namun sebagian besar masih berbasis tepung terigu impor dengan kandungan gizi yang terbatas.</p>
+<p>Di sisi lain, Indonesia memiliki kekayaan pangan lokal seperti sukun, parijoto, dan lele yang belum dimanfaatkan secara optimal.</p>
+<p>Ketergantungan terhadap bahan impor serta kurangnya inovasi pangan lokal menjadi tantangan nyata menuju kemandirian pangan.</p>
+</section>
+
+<section id="solusi" class="fade">
+<h2>💡 Hadir Sebagai Solusi Inovatif</h2>
+<p>Narasé Noodle dikembangkan sebagai alternatif mie instan yang lebih sehat dan berkelanjutan dengan memanfaatkan bahan pangan lokal berkualitas.</p>
+<div class="card">🌾 Tepung sukun sebagai pengganti terigu</div>
+<div class="card">🍇 Pewarna alami dari parijoto</div>
+<div class="card">🐟 Abon lele sebagai sumber protein</div>
+<p>Kombinasi ini menghadirkan produk mie instan yang tidak hanya lezat, tetapi juga bernilai gizi lebih tinggi.</p>
+</section>
+
+<section class="fade">
+<h2>🍜 Apa Itu Narasé Noodle?</h2>
+<p>Narasé Noodle adalah mie instan inovatif yang dirancang untuk menjawab kebutuhan pangan modern: praktis, sehat, dan berkelanjutan.</p>
+<p>Dengan memadukan bahan lokal dan teknologi pengolahan yang tepat, Narasé Noodle menjadi alternatif baru bagi masyarakat yang menginginkan gaya hidup lebih sehat tanpa meninggalkan kepraktisan.</p>
+</section>
+
+<section class="fade">
+<h2>🌈 Lebih dari Sekadar Mie Instan</h2>
+<p>Sukun → sumber energi dengan indeks glikemik lebih stabil</p>
+<p>Parijoto → kaya antioksidan alami</p>
+<p>Lele → tinggi protein untuk pertumbuhan</p>
+<p>Narasé Noodle menghadirkan keseimbangan antara energi, protein, dan serat dalam satu sajian praktis.</p>
+</section>
+
+<section class="fade">
+<h2>🔬 Inovasi Berbasis Lokal dan Berkelanjutan</h2>
+<p>Produk ini dikembangkan dengan pendekatan smart sustainable food, yang menekankan pada efisiensi sumber daya lokal dan dampak lingkungan yang minimal.</p>
+<p>1. Mengurangi ketergantungan impor gandum</p>
+<p>2. Menggunakan bahan alami tanpa zat sintetis</p>
+<p>3. Mengarah pada konsep kemasan ramah lingkungan</p>
+<p><i>psst! funfact salah satu material packaging kami bisa tumbuh bibit bunga ketika di tanam loh!</i></p>
+</section>
+
+<section class="story fade">
+<h2>💖 Cerita di Balik Narasé Noodle</h2>
+<p>Narasé Noodle lahir dari sebuah keresahan sederhana yakni mengapa makanan yang paling praktis justru sering kali mengorbankan kesehatan?</p>
+<p>Lebih dari sekadar mie instan, Narasé Noodle adalah upaya menghadirkan perubahan menuju pola konsumsi yang lebih sadar, mandiri, dan berkelanjutan.</p>
+</section>
+
+<section class="fade">
+<h2>🌍 Dampak yang Ingin Diciptakan</h2>
+<p>🌍 Mendukung kemandirian pangan nasional</p>
+<p>👩‍🌾 Memberdayakan petani lokal</p>
+<p>🌱 Mendorong konsumsi pangan sehat</p>
+<p>♻️ Mengurangi dampak lingkungan</p>
+</section>
+
+<section class="fade">
+<h2>🎯 Untuk Siapa Narasé Noodle?</h2>
+<p>1. Pelajar & mahasiswa</p>
+<p>2. Masyarakat urban</p>
+<p>3. Konsumen mie instan</p>
+<p>4. Individu peduli kesehatan</p>
+</section>
+
+<section class="fade">
+<h2>🍽️ Praktis dalam Penyajian</h2>
+<p>1. Rebus mie selama 3–4 menit</p>
+<p>2. Campurkan bumbu</p>
+<p>3. Tambahkan taburan abon lele</p>
+<p><b>Praktis, sehat, dan tetap lezat!</b></p>
+</section>
+
+<section class="fade">
+<h2>✨ Mengapa Memilih Narasé Noodle?</h2>
+<p>✔ Berbasis bahan lokal Indonesia</p>
+<p>✔ Lebih sehat dibanding mie instan biasa</p>
+<p>✔ Kaya protein dan serat</p>
+<p>✔ Menggunakan pewarna alami</p>
+<p>✔ Mendukung keberlanjutan lingkungan</p>
+</section>
+
+<section id="kontak" class="fade">
+<h2>📞 KONTAK & PEMESANAN</h2>
+<p>Instagram: @narase.noodle</p>
+<p>WhatsApp: 085647102101</p>
+<p>Email: narasenoodle@email.com</p>
+<p><b>Tertarik mencoba inovasi mie sehat masa depan? Hubungi kami sekarang dan jadilah bagian dari perubahan!</b></p>
+</section>
+
+<div class="footer">
+<h2>💖 Siap Menjadi Bagian dari Perubahan?</h2>
+<p>Narasé Noodle bukan sekadar produk, tetapi langkah menuju masa depan pangan yang lebih baik.</p>
+</div>
+
+</div>
+</div>
+
+<script>
+const fades=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+ fades.forEach(f=>{
+  if(f.getBoundingClientRect().top<window.innerHeight-80){f.classList.add('show')}
+ })
+});
+
+let index=0;
+const slides=document.getElementById('slides');
+const total=slides.children.length;
+function showSlide(){slides.style.transform=`translateX(-${index*100}%)`;}
+setInterval(()=>{index=(index+1)%total;showSlide();},3000);
+
+
+
+
+</script>
+
+</body>
+</html>
